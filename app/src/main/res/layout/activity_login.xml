@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@color/colorPrimary"
-    tools:context=".LoginActivity">
+    tools:context=".login.view.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="1">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -89,20 +91,27 @@
                         android:layout_height="wrap_content"
                         android:text="@string/dont_have_acount"
                         android:textColor="@android:color/white"
-                        android:textStyle="bold"
                         android:textSize="@dimen/textsize_donthaveacount"
+                        android:textStyle="bold"
                         />
 
                     <TextView
                         android:id="@+id/createHere"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/create_here"
-                        android:textColor="@android:color/white"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/textsize_donthaveacount"
                         android:layout_toRightOf="@+id/dontHaveAcount"
                         android:onClick="goCreateAcoount"
+                        android:text="@string/create_here"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_donthaveacount"
+                        android:textStyle="bold"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressbar_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
                         />
 
                 </RelativeLayout>
