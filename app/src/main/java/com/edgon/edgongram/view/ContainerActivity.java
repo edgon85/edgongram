@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.edgon.edgongram.R;
-import com.edgon.edgongram.view.fragments.HomeFragment;
+import com.edgon.edgongram.post.view.HomeFragment;
 import com.edgon.edgongram.view.fragments.ProfileFragment;
 import com.edgon.edgongram.view.fragments.SearchFragment;
 import com.roughike.bottombar.BottomBar;

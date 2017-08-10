@@ -19,4 +19,5 @@
     <string name="tab_profile">Me</string>
     <string name="secondword_detail">Me Gusta</string>
     <string name="login_error">Somenthing happen</string>
+    <string name="hint_title">Titulo</string>
 </resources>
