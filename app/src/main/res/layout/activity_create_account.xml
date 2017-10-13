@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
-    tools:context=".view.CreateAccountActivity">
+    tools:context=".login.view.CreateAccountActivity">
 
 
     <include
@@ -34,7 +34,7 @@
                 >
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/email"
+                    android:id="@+id/edt_email_create_acount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_email"
@@ -79,7 +79,7 @@
                 >
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/password"
+                    android:id="@+id/edt_password_create_acount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_password"
@@ -95,7 +95,7 @@
                 >
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/confirmPassword"
+                    android:id="@+id/edt_confirm_password_create_acount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_confirm_password"
@@ -105,7 +105,7 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/joinUs"
+                android:id="@+id/btn_join_us_crate_acount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_buton_create_account"
@@ -115,7 +115,4 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
     </android.support.design.widget.CoordinatorLayout>

@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.6">
 
-            <ImageView
+            <ImageViewcr
                 android:id="@+id/logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                     >
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/password"
+                        android:id="@+id/edt_password_create_acount"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_password"

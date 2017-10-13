@@ -3,7 +3,9 @@ package com.edgon.edgongram.login.view;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +16,8 @@ import com.edgon.edgongram.R;
 import com.edgon.edgongram.login.presenter.LoginPresenter;
 import com.edgon.edgongram.login.presenter.LoginPresenterImpl;
 import com.edgon.edgongram.view.ContainerActivity;
-import com.edgon.edgongram.view.CreateAccountActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
 
@@ -24,6 +27,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     private ProgressBar progressBarLogin;
     private Uri url;
 
+    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener authStateListener;
+
     private LoginPresenter presenter;
 
     @Override
@@ -31,8 +37,11 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+       // firebaseAuthActivity(); // para verificar si el usuario esta logeado o no
+
+
         userNameLogin = (EditText) findViewById(R.id.username);
-        passwordLogin = (EditText) findViewById(R.id.password);
+        passwordLogin = (EditText) findViewById(R.id.edt_password_create_acount);
         btnLogin = (Button) findViewById(R.id.btn_login);
         progressBarLogin = (ProgressBar) findViewById(R.id.progeressbar_login);
         hideProgressBar();
@@ -43,13 +52,34 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String user = userNameLogin.getText().toString();
                 String pass = passwordLogin.getText().toString();
+                signIn(user, pass);
 
-                presenter.signIn(user,pass);
             }
         });
 
+    }
+
+    private void firebaseAuthActivity() {
+        firebaseAuth = FirebaseAuth.getInstance();
+        authStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+
+                if (firebaseAuth != null){
+                    Log.e("MyLog","Usuario logeado " + firebaseUser.getEmail());
+                }else{
+                    Log.e("MyLog","Usuario no logeado");
+                }
+            }
+        };
+    }
+
+    private void signIn(String user, String pass) {
+        presenter.signIn(user,pass,this,firebaseAuth);
     }
 
     @Override
@@ -98,6 +128,23 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     @Override
     public void loginError(String error) {
         Toast.makeText(this, getString(R.string.login_error) + error, Toast.LENGTH_SHORT).show();
+    }
+
+    public void goCreateAcoount(View view) {
+        Intent intent = new Intent(this, CreateAccountActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+       // firebaseAuth.addAuthStateListener(authStateListener);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
     }
 }
 
