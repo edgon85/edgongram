@@ -1,12 +1,14 @@
 package com.edgon.edgongram.login.repository;
 
-import com.edgon.edgongram.login.presenters.LoginPresenter;
+
+import com.edgon.edgongram.login.presenter.LoginPresenter;
+import com.edgon.edgongram.login.repositori.LoginRepository;
 
 /**
  * Created by gonza on 6/28/2017.
  */
 
-public class LoginRepositoryImpl implements LoginRespository{
+public class LoginRepositoryImpl implements LoginRepository{
     LoginPresenter presenter;
 
     public LoginRepositoryImpl(LoginPresenter presenter) {

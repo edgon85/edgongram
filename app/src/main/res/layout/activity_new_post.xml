@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context="com.edgon.edgongram.post.view.NewPostActivity">
 
     <include layout="@layout/actionbar_toolbar"/>
@@ -16,6 +15,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/img_photo"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="6"
@@ -58,13 +58,12 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_creat_post"
+            android:id="@+id/btn_create_post"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txt_buton_create_post"
+            android:text="@string/create_post"
             android:theme="@style/RasedButtonDark"
             />
-
     </LinearLayout>
 
 
