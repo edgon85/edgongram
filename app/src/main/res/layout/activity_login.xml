@@ -102,7 +102,7 @@
                         android:textStyle="bold"
                         android:textSize="@dimen/textsize_donthaveacount"
                         android:layout_toRightOf="@+id/dontHaveAcount"
-                        android:onClick="goCreateAcoount"
+                        android:onClick="goCreateAcount"
                         />
 
                     <ProgressBar

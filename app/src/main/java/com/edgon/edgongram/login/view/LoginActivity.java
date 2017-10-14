@@ -14,7 +14,6 @@ import com.edgon.edgongram.R;
 import com.edgon.edgongram.login.presenter.LoginPresenter;
 import com.edgon.edgongram.login.presenter.LoginPresenterImpl;
 import com.edgon.edgongram.view.ContainerActivity;
-import com.edgon.edgongram.view.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
 
@@ -52,8 +51,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     }
 
+
     @Override
-    public void goCreateAcount() {
+    public void goCreateAcount(View view) {
         Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
     }
