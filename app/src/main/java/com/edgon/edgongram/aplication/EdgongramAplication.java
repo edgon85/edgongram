@@ -2,16 +2,22 @@ package com.edgon.edgongram.aplication;
 
 import android.app.Application;
 
-/**
- * Created by Edgon on 13/10/17.
- */
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class EdgongramAplication extends Application{
+
+    FirebaseStorage firebaseStorage;
 
     @Override
     public void onCreate() {
         super.onCreate();
+
+        firebaseStorage = FirebaseStorage.getInstance();
     }
 
-    //esto es lo que hace un onCreate
+
+    public StorageReference storageReference(){
+        return firebaseStorage.getReference();
+    }
 }
