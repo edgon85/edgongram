@@ -22,12 +22,12 @@ public class ContainerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_container);
 
         bottomBar = (BottomBar) findViewById(R.id.bottombar);
-       bottomBar.setDefaultTab(R.id.tab_home);
+        bottomBar.setDefaultTab(R.id.tab_home);
 
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-                switch (tabId){
+                switch (tabId) {
                     case R.id.tab_home:
                         HomeFragment homeFragment = new HomeFragment();
                         getSupportFragmentManager().beginTransaction()

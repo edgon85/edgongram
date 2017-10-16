@@ -14,12 +14,18 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.edgon.edgongram.R;
 import com.edgon.edgongram.adapter.PictureAdapterRecyclerView;
+import com.edgon.edgongram.login.view.LoginActivity;
 import com.edgon.edgongram.model.Pictures;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.io.File;
 import java.io.IOException;
@@ -43,7 +49,10 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout   for this fragment
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
+
         showToolBar(getResources().getString(R.string.tab_home),false,view);
+        setHasOptionsMenu(true);
+
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.pictureRecycler);
         fabCamera = (FloatingActionButton) view.findViewById(R.id.fab_camera);
 
@@ -112,6 +121,28 @@ public class HomeFragment extends Fragment {
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(title);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+    }
+
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu,menu);
+
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+                getActivity().finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public ArrayList<Pictures> buildPictures(){

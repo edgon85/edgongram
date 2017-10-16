@@ -1,9 +1,12 @@
 package com.edgon.edgongram.login.view;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +17,8 @@ import com.edgon.edgongram.R;
 import com.edgon.edgongram.login.presenter.LoginPresenter;
 import com.edgon.edgongram.login.presenter.LoginPresenterImpl;
 import com.edgon.edgongram.view.ContainerActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
 
@@ -25,10 +30,16 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     private LoginPresenter presenter;
 
+    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener authStateListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseListener();
 
         userNameLogin = (EditText) findViewById(R.id.username);
         passwordLogin = (EditText) findViewById(R.id.password);
@@ -45,10 +56,31 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
                 String user = userNameLogin.getText().toString();
                 String pass = passwordLogin.getText().toString();
 
-                presenter.signIn(user,pass);
+
+                signIn(user, pass, firebaseAuth);
             }
         });
 
+
+    }
+
+    private void firebaseListener() {
+        authStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                if (firebaseUser != null) {
+                    Log.e("MyLog", "Usuario logeado " + firebaseUser.getEmail());
+                    goHome();
+                } else {
+                    Log.e("MyLog", "Usuario no logeado");
+                }
+            }
+        };
+    }
+
+    private void signIn(String user, String pass, FirebaseAuth firebaseAuth) {
+        presenter.signIn(user,pass, this, firebaseAuth);
     }
 
 
@@ -98,6 +130,19 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     @Override
     public void loginError(String error) {
         Toast.makeText(this, getString(R.string.login_error) + error, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        firebaseAuth.addAuthStateListener(authStateListener);
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        firebaseAuth.removeAuthStateListener(authStateListener);
     }
 }
 
