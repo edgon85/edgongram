@@ -1,7 +1,9 @@
-package com.edgon.edgongram.view;
+package com.edgon.edgongram.post.view;
 
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,10 +12,22 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.edgon.edgongram.R;
+import com.edgon.edgongram.aplication.EdgongramAplication;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.StorageReference;
 
 public class PictureDetailActivity extends AppCompatActivity {
+
+    private ImageView imageHeader;
+    private EdgongramAplication app;
+    StorageReference storageReference;
+    private String PHOTO_NAME = "JPEG_20171016_12-22-31_302222952.jpg";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +35,36 @@ public class PictureDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_picture_detail);
         showToolBar("",true);
 
+        imageHeader = (ImageView) findViewById(R.id.imageHeader);
+
+        app = (EdgongramAplication) getApplicationContext();
+        storageReference = app.storageReference();
+
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             getWindow().setEnterTransition(new Fade());
         }
-        setStatusBarColor(findViewById(R.id.statusBarBackground),getResources().getColor(android.R.color.transparent));
+        setStatusBarColor(findViewById(R.id.statusBarBackground),
+                getResources().getColor(android.R.color.transparent));
 
+        showData();
+    }
+
+    private void showData() {
+        storageReference.child("postImages/"+PHOTO_NAME).getDownloadUrl()
+                .addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        Glide.with(PictureDetailActivity.this)
+                                .load(uri.toString())
+                                .into(imageHeader);
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
     }
 
 

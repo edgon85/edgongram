@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.edgon.edgongram.R;
 import com.edgon.edgongram.model.Pictures;
-import com.edgon.edgongram.view.PictureDetailActivity;
+import com.edgon.edgongram.post.view.PictureDetailActivity;
 
 import java.util.ArrayList;
 
