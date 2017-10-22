@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import com.edgon.edgongram.R;
 import com.edgon.edgongram.adapter.PictureAdapterRecyclerView;
 import com.edgon.edgongram.model.Pictures;
+import com.google.firebase.crash.FirebaseCrash;
 
 import java.util.ArrayList;
 
@@ -31,6 +32,7 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        FirebaseCrash.log("Inicializando ProfileFragment");
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         showToolBar("",false,view);

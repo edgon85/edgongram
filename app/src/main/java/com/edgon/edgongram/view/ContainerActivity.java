@@ -9,6 +9,7 @@ import com.edgon.edgongram.R;
 import com.edgon.edgongram.post.view.HomeFragment;
 import com.edgon.edgongram.view.fragments.ProfileFragment;
 import com.edgon.edgongram.view.fragments.SearchFragment;
+import com.google.firebase.crash.FirebaseCrash;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
@@ -20,6 +21,7 @@ public class ContainerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
+        FirebaseCrash.log("Incializando ContainerActivity");
 
         bottomBar = (BottomBar) findViewById(R.id.bottombar);
         bottomBar.setDefaultTab(R.id.tab_home);

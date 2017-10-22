@@ -26,6 +26,7 @@ import com.edgon.edgongram.adapter.PictureAdapterRecyclerView;
 import com.edgon.edgongram.login.view.LoginActivity;
 import com.edgon.edgongram.model.Pictures;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.crash.FirebaseCrash;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,6 +48,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        FirebaseCrash.report(new Exception("Reporte desde HomeFragment"));
         // Inflate the layout   for this fragment
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
 
@@ -84,6 +86,8 @@ public class HomeFragment extends Fragment {
             try {
                 photoFile = createImageFile();
             }catch (Exception e){
+                e.printStackTrace();
+                FirebaseCrash.report(e);
                 Log.e("MyLog",e.getMessage());
             }
             if (photoFile != null){

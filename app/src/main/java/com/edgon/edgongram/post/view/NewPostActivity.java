@@ -16,6 +16,7 @@ import com.edgon.edgongram.R;
 import com.edgon.edgongram.aplication.EdgongramAplication;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.crash.FirebaseCrash;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -73,6 +74,7 @@ public class NewPostActivity extends AppCompatActivity {
             public void onFailure(@NonNull Exception e) {
                 Log.e("MyLog","Error al subir foto " + e.toString());
                 e.printStackTrace();
+                FirebaseCrash.report(e);
             }
         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override

@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.crash.FirebaseCrash;
 
 import org.w3c.dom.Text;
 
@@ -86,9 +87,11 @@ public class CreateAccountActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null) {
-                    Log.e("MyLog", "Usuario logeado" + firebaseUser.getEmail());
+                    //Log.e("MyLog", "Usuario logeado" + firebaseUser.getEmail());
+                    FirebaseCrash.logcat(Log.WARN,"CreatrAcountActivity", "Usuario logeado" + firebaseUser.getEmail());
                 } else {
-                    Log.e("MyLog", "Usuario no logeado");
+                    //Log.e("MyLog", "Usuario no logeado");
+                    FirebaseCrash.logcat(Log.WARN,"CreatrAcountActivity", "Usuario no logeado");
                 }
             }
         };

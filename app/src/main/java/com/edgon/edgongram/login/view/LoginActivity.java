@@ -19,6 +19,7 @@ import com.edgon.edgongram.login.presenter.LoginPresenterImpl;
 import com.edgon.edgongram.view.ContainerActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.crash.FirebaseCrash;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
 
@@ -70,10 +71,12 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null) {
-                    Log.e("MyLog", "Usuario logeado " + firebaseUser.getEmail());
+                    //Log.e("MyLog", "Usuario logeado " + firebaseUser.getEmail());
+                    FirebaseCrash.logcat(Log.WARN, "LoginActivity","Usuario logeado " + firebaseUser.getEmail());
                     goHome();
                 } else {
-                    Log.e("MyLog", "Usuario no logeado");
+                    //Log.e("MyLog", "Usuario no logeado");
+                    FirebaseCrash.logcat(Log.ERROR, "LoginActivity","Usuario no logeado ");
                 }
             }
         };

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.edgon.edgongram.R;
 import com.edgon.edgongram.adapter.PictureAdapterRecyclerView;
 import com.edgon.edgongram.model.Pictures;
+import com.google.firebase.crash.FirebaseCrash;
 
 import java.util.ArrayList;
 
@@ -29,6 +30,7 @@ public class SearchFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        FirebaseCrash.log("Inicializando SearchFragmnt");
         View rootView = inflater.inflate(R.layout.fragment_search, container, false);
 
         poblarReclicler(rootView);

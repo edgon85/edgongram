@@ -13,12 +13,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.edgon.edgongram.R;
 import com.edgon.edgongram.aplication.EdgongramAplication;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.crash.FirebaseCrash;
 import com.google.firebase.storage.StorageReference;
 
 public class PictureDetailActivity extends AppCompatActivity {
@@ -62,7 +64,9 @@ public class PictureDetailActivity extends AppCompatActivity {
                 }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-
+                Toast.makeText(PictureDetailActivity.this, "Ocurrió un error al traer la imagen", Toast.LENGTH_SHORT).show();
+                e.printStackTrace();
+                FirebaseCrash.report(e);
             }
         });
     }
