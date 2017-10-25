@@ -38,9 +38,7 @@ public class EdgongramAplication extends Application{
             }
         };
 
-
     }
-
 
     public StorageReference storageReference(){
         return firebaseStorage.getReference();
