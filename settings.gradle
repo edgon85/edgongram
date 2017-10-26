@@ -1,1 +1,1 @@
-include ':app', ':firebaseauthentication'
+include ':app', ':firebaseauthentication', ':realtime'
