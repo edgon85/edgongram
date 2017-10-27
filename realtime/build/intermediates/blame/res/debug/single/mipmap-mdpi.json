@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

@@ -1,0 +1,7 @@
+#Thu Oct 26 21:51:50 CDT 2017
+base.0=/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_917cce3e4374b668939f39cb60bf86c1ad4f4c96
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_cb2cae474337cc4f3fe9d53b01ce6ab7abaa7509/classes.dex
+base.1=/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_cb2cae474337cc4f3fe9d53b01ce6ab7abaa7509
+file.0=/Users/Edgon/AndroidStudioProjects/Edgongram/realtime/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_917cce3e4374b668939f39cb60bf86c1ad4f4c96/classes.dex
