@@ -1,0 +1,7 @@
+#Fri Oct 27 16:16:53 CDT 2017
+base.0=/Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4563fe047d452a06e2ef7519641b1329b172102e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_916d398a3ec474387c0ae9a271cf16242cd1adc1/classes.dex
+base.1=/Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_916d398a3ec474387c0ae9a271cf16242cd1adc1
+file.0=/Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4563fe047d452a06e2ef7519641b1329b172102e/classes.dex

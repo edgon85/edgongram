@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    }
+]

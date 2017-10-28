@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/Edgon/.android/build-cache/ac8d0110a707c8a5c09f2afa5976afaeac25d023/output/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/Edgon/.android/build-cache/ac8d0110a707c8a5c09f2afa5976afaeac25d023/output/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/Edgon/.android/build-cache/ac8d0110a707c8a5c09f2afa5976afaeac25d023/output/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    }
+]

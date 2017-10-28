@@ -1,0 +1,233 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:2:1-17:12
+	package
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+application
+ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:5:5-15:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Edgon/.android/build-cache/ed54f73bbab29d4947f9c7094f28c2affc290238/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/Edgon/.android/build-cache/65bc88d5b2f8e39352ed0bdb9808901adfafb42c/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e1160841ddd9766a0e35dd74b3c462fd3ba3988a/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Edgon/.android/build-cache/c1a372e7e0cbed4972a0e59c9f335485c287e025/output/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:11.0.4] /Users/Edgon/.android/build-cache/cc4b3c320b3721bdc49856527ad83f3dc3946106/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] /Users/Edgon/.android/build-cache/7ead72b9b55430bfdbdc3fc65db88c4c28494248/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] /Users/Edgon/.android/build-cache/1dbaf9efcfa054ee807d916e1d15270da6a8fbd4/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/Edgon/.android/build-cache/a6b3b00b4d006e0070a56ea9d1d036d160893a03/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/Edgon/.android/build-cache/71e9bdbdc139b3e93b2aa043141f352f87929a83/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/Edgon/.android/build-cache/d78fa682983af6a040c8a9d55475b6088efea385/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/Edgon/.android/build-cache/00f1570fb9c141333f903ba714ae4eaf6227c4cd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e663ddb4666971f66b5dbb05e56ad2570c2edfbe/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e4367e8fd9f2938b3f7c2d7e23edc31bbf57563f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/Edgon/.android/build-cache/6abe635a34df149b9a998298f84890b803285f21/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/Edgon/.android/build-cache/632c392218754fb9ff9279c51c9dcecedea0cc01/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:6:9-41
+	android:supportsRtl
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:7:9-35
+	android:roundIcon
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:6:42-87
+	android:allowBackup
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:5:18-44
+	android:icon
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:5:45-79
+	android:theme
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:7:36-67
+activity#com.edgon.firebaseauthentication.MainActivity
+ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:8:9-14:20
+	android:name
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:8:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:9:13-13:29
+action#android.intent.action.MAIN
+ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:10:17-69
+	android:name
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:10:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:12:17-77
+	android:name
+		ADDED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml:12:27-74
+uses-sdk
+INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Edgon/.android/build-cache/ed54f73bbab29d4947f9c7094f28c2affc290238/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/Edgon/.android/build-cache/65bc88d5b2f8e39352ed0bdb9808901adfafb42c/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e1160841ddd9766a0e35dd74b3c462fd3ba3988a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Edgon/.android/build-cache/c1a372e7e0cbed4972a0e59c9f335485c287e025/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage:11.0.4] /Users/Edgon/.android/build-cache/1690d5c0e213404da8e9f45fa887f7f6763a1b99/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.0.4] /Users/Edgon/.android/build-cache/240310fa83b863a9b95c6abe347ba4ca472a651a/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.4] /Users/Edgon/.android/build-cache/cc4b3c320b3721bdc49856527ad83f3dc3946106/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] /Users/Edgon/.android/build-cache/7ead72b9b55430bfdbdc3fc65db88c4c28494248/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] /Users/Edgon/.android/build-cache/1dbaf9efcfa054ee807d916e1d15270da6a8fbd4/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/Edgon/.android/build-cache/a6b3b00b4d006e0070a56ea9d1d036d160893a03/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/Edgon/.android/build-cache/71e9bdbdc139b3e93b2aa043141f352f87929a83/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/Edgon/.android/build-cache/d78fa682983af6a040c8a9d55475b6088efea385/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/Edgon/.android/build-cache/00f1570fb9c141333f903ba714ae4eaf6227c4cd/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e663ddb4666971f66b5dbb05e56ad2570c2edfbe/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e4367e8fd9f2938b3f7c2d7e23edc31bbf57563f/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/Edgon/.android/build-cache/6abe635a34df149b9a998298f84890b803285f21/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/Edgon/.android/build-cache/632c392218754fb9ff9279c51c9dcecedea0cc01/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Edgon/.android/build-cache/ed54f73bbab29d4947f9c7094f28c2affc290238/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+		INJECTED from /Users/Edgon/AndroidStudioProjects/Edgongram/firebasesrorage/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Edgon/.android/build-cache/ed54f73bbab29d4947f9c7094f28c2affc290238/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/Edgon/.android/build-cache/65bc88d5b2f8e39352ed0bdb9808901adfafb42c/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e1160841ddd9766a0e35dd74b3c462fd3ba3988a/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/Edgon/.android/build-cache/d78fa682983af6a040c8a9d55475b6088efea385/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/Edgon/.android/build-cache/00f1570fb9c141333f903ba714ae4eaf6227c4cd/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e663ddb4666971f66b5dbb05e56ad2570c2edfbe/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/Edgon/.android/build-cache/e4367e8fd9f2938b3f7c2d7e23edc31bbf57563f/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/Edgon/.android/build-cache/6abe635a34df149b9a998298f84890b803285f21/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/Edgon/.android/build-cache/632c392218754fb9ff9279c51c9dcecedea0cc01/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Edgon/.android/build-cache/ed54f73bbab29d4947f9c7094f28c2affc290238/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Edgon/.android/build-cache/ed54f73bbab29d4947f9c7094f28c2affc290238/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] /Users/Edgon/.android/build-cache/7ead72b9b55430bfdbdc3fc65db88c4c28494248/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:20:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] /Users/Edgon/.android/build-cache/7ead72b9b55430bfdbdc3fc65db88c4c28494248/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:21:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] /Users/Edgon/.android/build-cache/7ead72b9b55430bfdbdc3fc65db88c4c28494248/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] /Users/Edgon/.android/build-cache/7ead72b9b55430bfdbdc3fc65db88c4c28494248/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] /Users/Edgon/.android/build-cache/7ead72b9b55430bfdbdc3fc65db88c4c28494248/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] /Users/Edgon/.android/build-cache/346092ed7edf867ba7f82a928ca96943f50c614b/output/AndroidManifest.xml:33:16-90
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:43:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:44:13-46:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:44:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:45:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] /Users/Edgon/.android/build-cache/3da38c333d0bcd62fe64dc6cf60fd1cf3c0d0124/output/AndroidManifest.xml:45:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.0.4] /Users/Edgon/.android/build-cache/1dbaf9efcfa054ee807d916e1d15270da6a8fbd4/output/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.0.4] /Users/Edgon/.android/build-cache/1dbaf9efcfa054ee807d916e1d15270da6a8fbd4/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.0.4] /Users/Edgon/.android/build-cache/1dbaf9efcfa054ee807d916e1d15270da6a8fbd4/output/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.0.4] /Users/Edgon/.android/build-cache/1dbaf9efcfa054ee807d916e1d15270da6a8fbd4/output/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.0.4] /Users/Edgon/.android/build-cache/1dbaf9efcfa054ee807d916e1d15270da6a8fbd4/output/AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/Edgon/.android/build-cache/71e9bdbdc139b3e93b2aa043141f352f87929a83/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/Edgon/.android/build-cache/71e9bdbdc139b3e93b2aa043141f352f87929a83/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/Edgon/.android/build-cache/71e9bdbdc139b3e93b2aa043141f352f87929a83/output/AndroidManifest.xml:20:20-65

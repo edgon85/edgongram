@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/Edgon/AndroidStudioProjects/Edgongram/firebaseauthentication/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/Users/Edgon/.android/build-cache/02e0472ac29d8d1545bd7d8a5495aa04bdb25e9a/output/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]
